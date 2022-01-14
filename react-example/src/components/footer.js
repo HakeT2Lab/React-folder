@@ -1,0 +1,7 @@
+function Footer({
+    footer
+}){
+    return{
+  
+    };
+}
