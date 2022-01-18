@@ -1,17 +1,30 @@
 import ingredients from "../App";
 
 function Ingredients({
-    ingredients
+    ingredients,
+    title,
+    prep_time
 }){
     return (
-        <ol>    
-            {/* {ingredients} */}
-            {ingredients.map(
-                (ingredient)=>{
-                 return <li key={ingredient}>{ingredient}</li>;
-                }
-            )}
-        </ol>
+        <div>
+            <h2>
+                {title}
+            </h2>
+            
+            <p>
+                {prep_time}
+            </p>
+
+            <ol>    
+                {/* {ingredients} */}
+                {ingredients.map(
+                    (ingredient)=>{
+                        return <li key={ingredient}>{ingredient}</li>;
+                    
+                    }
+                )}
+            </ol>
+        </div>
 
     );
 }
